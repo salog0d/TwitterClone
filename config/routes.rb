@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   }
   get "pages/home"
   resources :posts do
+    resources :likes
     resources :comments
   end
   # Defines the root path route ("/")

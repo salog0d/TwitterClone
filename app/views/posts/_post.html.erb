@@ -1,8 +1,7 @@
-<div id="<%= dom_id post %>">
-  <p>
-    <strong></strong>
-    <%= post.title %>
-  </p>
-
-
+<div id="<%= dom_id post %>" class="card mb-3 shadow-sm">
+  <div class="card-body">
+     <p class="card-text text-muted">Publicado por: <strong><%= post.user.user_name %></strong></p>
+      <p class="card-text text-muted">Publicado en: <strong><%= time_tag post.updated_at%></strong></p>
+    <h5 class="card-title"><%= post.title %></h5>
+  </div>
 </div>
